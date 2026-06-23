@@ -35,5 +35,5 @@ ChatGPT, GigaChat, Alisa, Meta AI, DeepSeek
 ## Author
 
 Aleksei Khvostov — Independent AI Safety Research
-- GitHub: GitHub: https://github.com/aleksei-khvostov
+- GitHub: https://github.com/aleksei-khvostov
 - LinkedIn: https://www.linkedin.com/in/aleksei-khvostov/
