@@ -2,7 +2,7 @@
 
 An open adversarial evaluation framework for Russian-language LLM safety testing.
 
-Built as an extension of the [LLM Safety Evaluation Lab](https://github.com/fsrxc2bvv9-ctrl/llm-safety-evaluation-lab) — an early structured, publicly available red-teaming dataset focused on Russian-language model behavior.
+Built as an extension of the [LLM Safety Evaluation Lab](https://github.com/aleksei-khvostov/llm-safety-evaluation-lab) — an early structured, publicly available red-teaming dataset focused on Russian-language model behavior.
 
 **Status:** Active development | May 2026
 
@@ -185,7 +185,7 @@ Evaluation dimensions include:
 
 Built by **Aleksei Khvostov**
 
-- GitHub: [fsrxc2bvv9-ctrl](https://github.com/fsrxc2bvv9-ctrl)
+- GitHub: [aleksei-khvostov](https://github.com/aleksei-khvostov)
 - LinkedIn: [aleksei-khvostov](https://www.linkedin.com/in/aleksei-khvostov/)
 
 ---
