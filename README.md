@@ -1,3 +1,38 @@
+---
+language:
+- ru
+
+license: mit
+
+pretty_name: RuSafetyBench
+
+task_categories:
+- text-generation
+- text-classification
+
+tags:
+- ai-safety
+- llm
+- red-teaming
+- evaluation
+- adversarial
+- russian
+
+size_categories:
+- n<1K
+
+annotations_creators:
+- expert-generated
+
+language_creators:
+- expert-generated
+
+multilinguality:
+- monolingual
+
+source_datasets:
+- original
+---
 # Russian LLM Safety Benchmark (RuSafetyBench)
 
 An open adversarial evaluation framework for Russian-language LLM safety testing.
