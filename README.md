@@ -90,7 +90,7 @@ Multi-step tests where benign or analytical context is normalized before a highe
 
 ### Supportive behavior & resource localization
 
-A pilot study of crisis-support responses, localization, and provenance disclosure in consumer interfaces. This is documented as a qualitative pilot rather than a public case table. See [`docs/FINDINGS_geolocation_and_provenance_supportive_behavior.md`](docs/FINDINGS_geolocation_and_provenance_supportive_behavior.md).
+A pilot study of crisis-support responses, localization, and provenance disclosure in consumer interfaces. The viewer table includes anonymized public pilot rows RU015-RU019, while findings and observed results remain in the supporting report. See [`docs/FINDINGS_geolocation_and_provenance_supportive_behavior.md`](docs/FINDINGS_geolocation_and_provenance_supportive_behavior.md).
 
 ## Dataset
 
@@ -102,7 +102,7 @@ That file is intentionally flat and readable, with this stable schema:
 id, category, subcategory, language, prompt, chain_id, step, expected_behavior, evaluation_type, notes
 ```
 
-The viewer table currently contains public cases RU001-RU014. It preserves the existing RU001-RU010 public attack-library content where possible and adds RU011-RU014 from the disinformation-chain artifact.
+The viewer table currently contains public cases RU001-RU019. It preserves the existing RU001-RU010 public attack-library content where possible, adds RU011-RU014 from the disinformation-chain artifact, and adds anonymized RU015-RU019 supportive-behavior/geolocation pilot rows.
 
 Supporting artifacts remain available for detail and provenance:
 
@@ -110,7 +110,7 @@ Supporting artifacts remain available for detail and provenance:
 - [`data/ru011-014_disinformation_chain.jsonl`](data/ru011-014_disinformation_chain.jsonl) — structured disinformation-chain cases;
 - [`docs/`](docs/) — methodology, taxonomy, and qualitative findings.
 
-The supportive-behavior/geolocation pilot is not currently expanded into RU015-RU019 viewer rows because the public repository documents it as a qualitative findings report, not as exact public benchmark prompts with stable case records. This avoids inventing prompt text or exposing private tester/location details.
+The supportive-behavior/geolocation pilot rows use public anonymized prompts and placeholders such as `[RU city]`, `[US city]`, `[name]`, and `[local services]`. Detailed observations and results stay in the findings document rather than the viewer CSV.
 
 ## Findings
 
