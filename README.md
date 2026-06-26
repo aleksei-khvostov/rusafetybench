@@ -32,6 +32,13 @@ multilinguality:
 
 source_datasets:
 - original
+
+configs:
+- config_name: default
+  data_files:
+  - split: test
+    path: data/rusafetybench_viewer.csv
+
 ---
 # Russian LLM Safety Benchmark (RuSafetyBench)
 
