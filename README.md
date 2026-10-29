@@ -46,7 +46,13 @@ An open Russian-language AI safety benchmark suite for testing how language, cul
 
 RuSafetyBench extends the [LLM Safety Evaluation Lab](https://github.com/aleksei-khvostov/llm-safety-evaluation-lab) with public Russian-language benchmark cases, qualitative pilot studies, and manually reviewed findings. The project is in active development and should be read as a growing benchmark suite, not a finalized leaderboard.
 
-**Status:** Active development | May 2026
+**Evidence scope:** exploratory, manually evaluated case collection; “benchmark” names a developing resource, not a standardized executable evaluation or leaderboard.
+
+The viewer has 19 unique rows (RU001–RU019). The original attack library has 11 rows, including RU004a, which is absent from the viewer: the union contains 20 unique IDs. Viewer categories are imbalanced: Social Engineering 9, supportive_behavior 5, and five other categories with one row each. Taxonomy concepts also appear as subcategories/failure modes, so category labels alone are not full taxonomy coverage.
+
+The viewer stores prompts and expectations, not model responses. The original library lists 54 case/model slots in aggregate notes; these are not 54 preserved raw responses or verified independent runs. No executable evaluator, automated test suite, or CI workflow is committed. Consumer-interface findings cannot be regenerated from this repository alone.
+
+The disinformation report lists seven table entries across six model-family labels (two Mistral modes); its six-model headline does not specify how modes are pooled. Its causal and reasoning-depth interpretations exceed the single-chain observations. The geolocation report includes N=3 follow-ups for three anonymized models, alongside mostly N=1 cells; repeated agreement in a few observations does not establish determinism. These historical reports and labels remain unchanged pending a separately reviewed clarification.
 
 ## Overview
 
@@ -106,7 +112,7 @@ The viewer table currently contains public cases RU001-RU019. It preserves the e
 
 Supporting artifacts remain available for detail and provenance:
 
-- [`data/attack_library_ru.csv`](data/attack_library_ru.csv) — original RU001-RU010 attack library, including richer internal columns;
+- [`data/attack_library_ru.csv`](data/attack_library_ru.csv) — original RU001-RU010 attack library, including RU004a and richer internal columns;
 - [`data/ru011-014_disinformation_chain.jsonl`](data/ru011-014_disinformation_chain.jsonl) — structured disinformation-chain cases;
 - [`docs/`](docs/) — methodology, taxonomy, and qualitative findings.
 
@@ -183,12 +189,8 @@ Built by **Aleksei Khvostov**
 
 A 2025 MIT study by Elinor Poole-Dayan, Deb Roy, and Jad Kabbara found systematic underperformance of GPT-4, Claude 3 Opus, and Llama 3 for users with lower English proficiency, lower formal education, and non-US origin. Reported effects included reduced factual accuracy, elevated refusal rates, and condescending response patterns.
 
-One particularly relevant finding: Claude 3 Opus achieved 95.6% accuracy for a highly educated US persona and 69.3% for a low-education Russian persona on identical SciQ benchmark questions.
-
-The paper also documented cases where models refused to answer basic science or anatomy questions for Russian and Iranian personas while answering the same questions normally for US users.
-
-These findings align with a core hypothesis behind RuSafetyBench: language and cultural context can materially affect model calibration, refusal behavior, and safety performance in ways not captured by English-only evaluation benchmarks.
+This external user-persona study motivates investigating sensitivity to user context. It does not independently validate RuSafetyBench or establish effects on Russian-language safety evaluation.
 
 > Poole-Dayan, E., Roy, D., & Kabbara, J. (2025).  
 > *LLM Targeted Underperformance Disproportionately Impacts Vulnerable Users.*  
-> arXiv:2406.17737
+> [arXiv:2406.17737v2](https://arxiv.org/abs/2406.17737v2)
